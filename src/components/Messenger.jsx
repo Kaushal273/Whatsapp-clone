@@ -1,13 +1,30 @@
-import { Box, Typography} from '@mui/material';
+import { AppBar, Box, Toolbar, styled} from '@mui/material';
 
 //components
 import LoginDialog from './account/LoginDialog';
 
+
+const Component = styled(Box)`
+    height: 100vh;
+    background: #DCDCDC;
+`;
+
+const Header = styled(AppBar)`
+    height: 220px;
+    background-color: #00bfa5;
+    box-shadow: none;
+`;
+
 const Messenger = () => {
     return(
-        <Box>
-            <Typography>Hello from Messenger</Typography>
-        </Box>
+        <Component>
+            <Header>
+                <Toolbar>
+
+                </Toolbar>
+            </Header>
+            <LoginDialog/>
+        </Component>
     )
 }
 
