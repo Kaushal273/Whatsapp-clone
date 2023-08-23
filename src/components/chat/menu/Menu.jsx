@@ -1,8 +1,16 @@
+import { Box } from "@mui/material";
+
+
+//components
+import Header from "./Header";
+
 
 
 const Menu = () =>{
     return(
-        <div>Hello from menu</div>
+        <Box>
+                <Header />
+        </Box>
     )
 }
 
