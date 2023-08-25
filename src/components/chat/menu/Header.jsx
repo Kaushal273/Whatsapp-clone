@@ -4,6 +4,7 @@ import { AccountContext } from "../../../context/AccountProvider";
 import { Box, styled } from "@mui/material";
 import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import HeaderMenu from "./HeaderMenu";
 
 const Component = styled(Box)`
     height: 44px;
@@ -44,7 +45,7 @@ const Header = () => {
             <Image src={account.picture} alt="dp" />
             <Wrapper>
                 <ChatIcon/>
-                <MoreVertIcon/>
+                <HeaderMenu />
             </Wrapper>
         </Component>
     )
