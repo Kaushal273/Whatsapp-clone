@@ -1,9 +1,5 @@
-import { styled } from "@mui/material";
+import { Box, styled } from "@mui/material";
 
-
-const Component = styled(Box)`
-
-`;
 
 
 const EmptyChat = () => {
