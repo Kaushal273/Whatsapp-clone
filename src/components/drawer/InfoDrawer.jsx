@@ -1,5 +1,6 @@
 import React from 'react'
 import Drawer from '@mui/material/Drawer';
+import {styled} from '@mui/material';
 
 
 const drawerStyle = {
@@ -9,6 +10,10 @@ const drawerStyle = {
     width: '25%',
     boxShadow: 'none'
 }
+
+const Component = styled(Box)`
+
+`;
 
 function InfoDrawer({open, setOpen}) {
 
