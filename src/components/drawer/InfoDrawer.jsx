@@ -11,6 +11,9 @@ const drawerStyle = {
     boxShadow: 'none'
 }
 
+const Component = styled(Box)`
+
+`;
 
 function InfoDrawer({open, setOpen}) {
 
