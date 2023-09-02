@@ -1,6 +1,11 @@
 import React from 'react'
 import Drawer from '@mui/material/Drawer';
-import {styled} from '@mui/material';
+import { Box, Typography, styled } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
+//components
+import Profile from './Profile';
+
 
 
 const drawerStyle = {
@@ -11,8 +16,25 @@ const drawerStyle = {
     boxShadow: 'none'
 }
 
-const Component = styled(Box)`
+const Header = styled(Box)`
+  background: #008069;
+  height: 107px;
+  color: #FFFFFF;
+  display: flex;
+  & > svg, & > p {
+    margin-top: auto;
+    padding: 15px;
+    font-weight: 600;
+  }
+`;
 
+const Component = styled(Box)`
+  background: #ededed;
+  height: 85%
+`;
+
+const Text = styled(Typography)`
+  font-size: 18px;
 `;
 
 function InfoDrawer({open, setOpen}) {
@@ -23,14 +45,19 @@ function InfoDrawer({open, setOpen}) {
 
   return (
     <Drawer
-        open={setOpen}
+        open={open}
         onClose={handleClose}
         PaperProps={{sx: drawerStyle}}
         style={{ zIndex: 1500}}
       
     >
-      <h4>profile</h4>
-      <h4>Name</h4>
+      <Header>
+            <ArrowBackIcon onClick= {() => setOpen(false)} />
+            <Text>Profile</Text>
+      </Header>
+      <Component>
+            <Profile />
+      </Component>
     </Drawer>
   )
 }
