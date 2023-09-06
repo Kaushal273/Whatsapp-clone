@@ -4,6 +4,7 @@ import { Box, styled } from "@mui/material";
 //components
 import Header from "./Header";
 import Search from "./Search";
+import Conversations from "./Conversations";
 
 
 
@@ -12,6 +13,7 @@ const Menu = () =>{
         <Box>
                 <Header />
                 <Search />
+                <Conversations />
         </Box>
     )
 }
