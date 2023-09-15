@@ -37,6 +37,9 @@ const Text = styled(Typography)`
   font-size: 18px;
 `;
 
+const Head = styled(Box)`
+`;
+
 function InfoDrawer({open, setOpen}) {
 
     const handleClose = () => {
